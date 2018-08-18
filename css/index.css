@@ -1,0 +1,318 @@
+/* 现代浏览器clearfix方案，不支持IE6/7 */
+.clearfix:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+ /* 全浏览器通用的clearfix方案 */
+ /* 引入了zoom以支持IE6/7 */
+.clearfix:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+
+/* 引入字体图标 */
+@font-face {
+    /* font-properties */
+    font-family: cointFont;
+    src:url('../fonts/iconfont.eot'),  
+    url('../fonts/iconfont.ttf'),
+    url('../fonts/iconfont.woff'); /* IE9 */
+}
+/* 样式开始 */
+
+/* 遮罩层 */
+.hiddenBody{
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    display: none;
+    margin: 0 auto;
+}
+/* 模态框  领取成功 */
+/* &#xe60e; */
+.codeAsk-succsess{
+    position: relative;
+    /* display: none; */
+    width: 18.375rem;
+    height: 16.875rem;
+    position: fixed;
+    z-index: 100;
+    /* top: 80px; */
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 3.125rem;
+    display: none;
+    padding-top: 1.25rem;
+}
+.codeAsk-succsess .sucessImg{
+    width: 15.375rem;
+    height: 4.375rem;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+.sucessImg img{
+    width: 100%;
+}
+.sucessImg {
+   text-align: center;
+
+}
+.closeMessage{
+    width: 15.375rem;
+    height: 4.375rem;
+    margin: 0 auto;
+}
+.closeMessage button{
+    height: 2.75rem;
+    width: 15.375rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+    font-size: .36rem;
+    font-weight: 700;
+    color: #C4402C;
+    background: #FFD33C;
+    margin-top: 6.125rem;
+    outline: none;
+    border-radius: 7.5rem;
+    letter-spacing: .1875rem;     
+}
+/* 模态框  领取失败 */
+.codeAsk-false{
+    position: relative;
+    /* display: none; */
+    width: 18.375rem;
+    height: 16.875rem;
+    position: fixed;
+    z-index: 100;
+    /* top: 80px; */
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 3.125rem;
+    display: none;
+    padding-top: 1.25rem;
+}
+.falseWord {
+    text-align: center;
+ }
+ .closeMessage-false{
+    width: 15.375rem;
+    height: 4.375rem;
+    margin: 0 auto;
+}
+ .closeMessage-false button{
+    height: 2.75rem;
+    width: 15.375rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+    font-size: .36rem;
+    font-weight: 700;
+    color: #C4402C;
+    background: #FFD33C;
+    margin-top: 6.125rem;
+    outline: none;
+    border-radius: 7.5rem;
+    letter-spacing: .1875rem;     
+}
+
+
+
+
+/* 最大的盒子 */
+.mainContet{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    background-image: url('../img/bagrond.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    /* background-attachment: fixed; */
+    padding-bottom: 1.6875rem;  
+}
+@media (min-width: 1000px){
+    body {
+        width: 23.4375rem;
+        margin: 0 auto;
+    }
+    .hiddenBody{
+        width: 23.4375rem;
+        margin: 0 auto;
+    }
+}
+
+/* 主要内容部分样式开始 */
+.contents{
+    height: auto;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin:  0 auto;
+    z-index: 2;
+    /* margin-bottom: 1.6875rem;  */
+}
+.wordTitle{
+    height: 1.125rem;
+    width: 7.625rem;
+    /* border:  1px solid white; */
+    margin:  0 auto;
+    padding-top: 1.65625rem;
+    text-align: center;
+    margin-bottom: 1.6875rem;
+}
+.wordTitle label{
+   color: #EFF8F0;
+   letter-spacing: .125rem;
+   font-size: 1rem; 
+}
+.section1{
+    position: relative;
+    height: 6.9375rem;
+    width: 18.9375rem;
+    /* border: 1px solid white; */
+    margin: 0 auto;
+    margin-bottom: .625rem;
+}
+.section1 img{
+    width: 100%;
+}
+.section1 .coint1{
+    width: 1.125rem;
+    height: 1.125rem;
+    position: absolute;
+    left: 1.625rem;
+    top: 4.625rem;
+}
+.section1 .coint1 img{
+    width: 100%;
+}
+
+/* 走马灯 */
+.marq{
+    width:20rem;
+    height: 3rem;
+    background: rgba(0,0,0,0.3);
+    /* opacity: 0.3; */ 
+    margin: 0 auto;
+    text-align: center;
+
+}
+.marqContent{
+    padding-top: .3125rem;
+    position: relative;
+    width:auto;
+    height:  3rem; 
+    /* border: 1px solid white; */
+    color: white;
+    z-index: 200;
+    display: inline-block;
+    margin-right: 11.8125rem;
+}
+.moveWords .userWords{
+    position: absolute;
+    left:3.0625rem;
+    top: .75rem;;
+
+}
+
+.userImg{
+    /* border: 1px solid white; */
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.marqContent .userImg img{
+    width: 100%;
+    z-index: 100;
+}
+
+/* 第二部分开始 */
+.section2{
+  padding-top: .5rem;
+  width: 15.375rem;
+  height: 16.875rem;  
+  /* border: 1px solid white; */
+  margin: 0 auto;
+  margin-bottom: 2.3125rem; 
+}
+.section2 img{
+    width: 100%;
+}
+
+
+/* 输入电话号码 */
+.setionNumber{
+    width: 20rem;
+    height: 2.75rem;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+    margin-bottom: .8125rem
+}
+.setionNumber input{
+    height: 2.75rem;
+    width: 20rem;
+    border-radius: 2.75rem;
+    background: #FFFFFF;
+    font-size: 1.36rem;
+    text-align: center;
+    box-sizing: border-box;
+    color: #3e478a;
+    letter-spacing: .3125rem;
+    outline: none;
+
+}
+/* 第三部分 */
+.section3{
+    /* margin-top: 5.8125rem; */
+    width: 20rem;
+    height: 2.75rem;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+    margin-bottom: 2.25rem; 
+
+}
+/* 规定动画无限次播放 */
+.infinite{
+    animation-iteration-count:infinite;
+}
+.section3 img{
+    width: 100%;
+    cursor: pointer;
+}
+/* 第四部分 */
+.section4{
+    position: relative;
+    /* border: 1px solid white; */
+    width: 20rem;;
+    height: 24.3125rem;
+    margin: 0 auto;
+   
+}
+.section4 img{
+    width: 100%;
+}
+.section4 .timeGet{
+    position: absolute;
+    top: 17.5rem;
+    left: 2rem;
+    width: 16.4375rem;
+    height: 4rem;
+    z-index: 1;
+    cursor: pointer;
+
+}
+.section4 .timeGet img{
+    width: 100%;
+}
